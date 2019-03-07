@@ -1,0 +1,22 @@
+{
+  "name": "YYToolKit",
+  "version": "0.1.0",
+  "summary": "A short description of YYToolKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ZyyFidoDido/YYToolKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ZyyFidoDido": "test@runoob.com"
+  },
+  "source": {
+    "git": "https://github.com/ZyyFidoDido/YYToolKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "YYToolKit/Classes/**/*"
+}

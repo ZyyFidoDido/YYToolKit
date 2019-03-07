@@ -1,0 +1,6 @@
+framework module YYToolKit {
+  umbrella header "YYToolKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
