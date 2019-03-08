@@ -237,13 +237,13 @@
  */
 - (void)yy_GradientLayerForMainColor{
     
-    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
-    gradientLayer.colors = @[(__bridge id)[UIColor yy_colorWithHexString:@"6CBA3F"].CGColor, (__bridge id)[UIColor yy_colorWithHexString:@"7DD73B"].CGColor];
-    gradientLayer.locations = @[@0.0,@1.0];
-    gradientLayer.startPoint = CGPointMake(0, 0);
-    gradientLayer.endPoint = CGPointMake(1.0, 0);
-    gradientLayer.frame = self.bounds;
-    [self.layer insertSublayer:gradientLayer atIndex:0];
+//    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+//    gradientLayer.colors = @[(__bridge id)[UIColor yy_colorWithHexString:@"6CBA3F"].CGColor, (__bridge id)[UIColor yy_colorWithHexString:@"7DD73B"].CGColor];
+//    gradientLayer.locations = @[@0.0,@1.0];
+//    gradientLayer.startPoint = CGPointMake(0, 0);
+//    gradientLayer.endPoint = CGPointMake(1.0, 0);
+//    gradientLayer.frame = self.bounds;
+//    [self.layer insertSublayer:gradientLayer atIndex:0];
     
 //    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
 //    gradientLayer.colors = @[(__bridge id)RGBACOLOR(255, 90, 39, 1).CGColor, (__bridge id)RGBACOLOR(230, 35, 27, 1).CGColor];
@@ -259,13 +259,13 @@
  */
 - (void)yy_GradientLayerForSubColor {
 
-    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
-    gradientLayer.colors = @[(__bridge id)[UIColor yy_colorWithHexString:@"FF6C20"].CGColor, (__bridge id)[UIColor yy_colorWithHexString:@"FBAC30"].CGColor];//FE8140
-    gradientLayer.locations = @[@0.0,@1.0];
-    gradientLayer.startPoint = CGPointMake(0, 0);
-    gradientLayer.endPoint = CGPointMake(1.0, 0);
-    gradientLayer.frame = self.bounds;
-    [self.layer insertSublayer:gradientLayer atIndex:0];
+//    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+//    gradientLayer.colors = @[(__bridge id)[UIColor yy_colorWithHexString:@"FF6C20"].CGColor, (__bridge id)[UIColor yy_colorWithHexString:@"FBAC30"].CGColor];//FE8140
+//    gradientLayer.locations = @[@0.0,@1.0];
+//    gradientLayer.startPoint = CGPointMake(0, 0);
+//    gradientLayer.endPoint = CGPointMake(1.0, 0);
+//    gradientLayer.frame = self.bounds;
+//    [self.layer insertSublayer:gradientLayer atIndex:0];
     
     
 //    CAGradientLayer *gradientLayer = [CAGradientLayer layer];

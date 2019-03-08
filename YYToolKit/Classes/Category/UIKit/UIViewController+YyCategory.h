@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *  Loading file from StoryBoard
  *
- *  @return
+ *  
  */
 + (UIViewController *)yy_instanceFromStoryBoard;
 

@@ -42,7 +42,7 @@ typedef NS_ENUM(NSInteger, ZYYBBorderDirectionType) {
 /**
  *  Load Xib file
  *
- *  @return
+ * 
  */
 + (instancetype)yy_instanceFromXib;
 
