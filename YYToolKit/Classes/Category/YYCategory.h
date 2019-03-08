@@ -9,6 +9,9 @@
 #ifndef YYCategory_h
 #define YYCategory_h
 
+#import "ReactiveCocoa.h"
+#import "Masonry.h"
+
 //core
 #import "NSDictionary+YyCategory.h"
 #import "NSArray+YyCategory.h"

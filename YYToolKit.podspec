@@ -36,7 +36,8 @@ TODO: YYToolKit is a Private Tool.Not necessarily good For you.
   #   'YYToolKit' => ['YYToolKit/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.public_header_files = 'Pod/Classes/**/*.h'
+   s.frameworks = 'UIKit', 'MapKit'
+   s.dependency 'Masonry', '~> 1.1.0'
+   s.dependency 'ReactiveCocoa','2.5.2'
 end
