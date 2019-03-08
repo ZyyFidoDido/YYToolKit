@@ -110,19 +110,19 @@ static const void *yy_placeHolderKey;
     NSNumber *max = @(maxWords);
     objc_setAssociatedObject(self, TextViewmaxWordsKey, max, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     
-    @_weakSelf(self)
+    __weak __typeof(self)weakSelf = self;
     [self.rac_textSignal subscribeNext:^(NSString *content) {
-        @_strongSelf(self)
+        __strong __typeof(weakSelf)strongSelf = weakSelf;
         
         NSInteger TEXTLENGTH  =  1000;
-        if (self.maxWords > 0) {
-            TEXTLENGTH = self.maxWords;
+        if (weakSelf.maxWords > 0) {
+            TEXTLENGTH = weakSelf.maxWords;
         }
         
         NSString *toBeString = content;
         //获取高亮部分
-        UITextRange *selectedRange = [self markedTextRange];
-        UITextPosition *position = [self positionFromPosition:selectedRange.start offset:0];
+        UITextRange *selectedRange = [weakSelf markedTextRange];
+        UITextPosition *position = [weakSelf positionFromPosition:selectedRange.start offset:0];
         
         // 没有高亮选择的字，则对已输入的文字进行字数统计和限制
         if (!position)
@@ -132,12 +132,12 @@ static const void *yy_placeHolderKey;
                 NSRange rangeIndex = [toBeString rangeOfComposedCharacterSequenceAtIndex:TEXTLENGTH];
                 if (rangeIndex.length == 1)
                 {
-                    self.text = [toBeString substringToIndex:TEXTLENGTH];
+                    weakSelf.text = [toBeString substringToIndex:TEXTLENGTH];
                 }
                 else
                 {
                     NSRange rangeRange = [toBeString rangeOfComposedCharacterSequencesForRange:NSMakeRange(0, TEXTLENGTH)];
-                    self.text = [toBeString substringWithRange:rangeRange];
+                    weakSelf.text = [toBeString substringWithRange:rangeRange];
                 }
             }
         }
