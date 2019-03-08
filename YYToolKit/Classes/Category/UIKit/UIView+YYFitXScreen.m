@@ -8,7 +8,7 @@
 
 #import "UIView+YYFitXScreen.h"
 #import <sys/utsname.h>
-#import "Masonry.h"
+//#import "Masonry.h"
 #import <objc/runtime.h>
 
 #define Height   [[UIScreen mainScreen] bounds].size.height
@@ -34,9 +34,9 @@
     if (self.tag == 99766) { //navView 高度变88
         
         if ([self judgeBangScreen]) {
-            [self mas_updateConstraints:^(MASConstraintMaker *make) {
-                make.height.mas_equalTo(88);
-            }];
+//            [self mas_updateConstraints:^(MASConstraintMaker *make) {
+//                make.height.mas_equalTo(88);
+//            }];
         }
         
     }
@@ -44,9 +44,9 @@
     if (self.tag == 26662) {
         
         if ([self judgeBangScreen]) {  //贴在底边的view 上移34
-            [self mas_updateConstraints:^(MASConstraintMaker *make) {
-                make.bottom.equalTo(self.superview.mas_bottom).with.offset(-34);
-            }];
+//            [self mas_updateConstraints:^(MASConstraintMaker *make) {
+//                make.bottom.equalTo(self.superview.mas_bottom).with.offset(-34);
+//            }];
         }
         
     }
@@ -54,9 +54,9 @@
     if (self.tag == 9766524) {
         
         if ([self judgeBangScreen]) { //贴上边的view 下移88
-            [self mas_updateConstraints:^(MASConstraintMaker *make) {
-                make.top.equalTo(self.superview.mas_top).with.offset(88);
-            }];
+//            [self mas_updateConstraints:^(MASConstraintMaker *make) {
+//                make.top.equalTo(self.superview.mas_top).with.offset(88);
+//            }];
         }
         
     }
@@ -64,9 +64,9 @@
     if (self.tag == 92675) {
         
         if ([self judgeBangScreen]) { //贴上边的view 下移到 20 + 24 的位置
-            [self mas_updateConstraints:^(MASConstraintMaker *make) {
-                make.top.equalTo(self.superview.mas_top).with.offset(44);
-            }];
+//            [self mas_updateConstraints:^(MASConstraintMaker *make) {
+//                make.top.equalTo(self.superview.mas_top).with.offset(44);
+//            }];
         }
         
     }
@@ -74,10 +74,10 @@
     if (self.tag == 9794439) {
         
         if ([self judgeBangScreen]) { // 主要是给 详情页的 webview
-            [self mas_updateConstraints:^(MASConstraintMaker *make) {
-                make.top.equalTo(self.superview.mas_top).with.offset(88);
-                make.bottom.equalTo(self.superview.mas_bottom).with.offset(-84);
-            }];
+//            [self mas_updateConstraints:^(MASConstraintMaker *make) {
+//                make.top.equalTo(self.superview.mas_top).with.offset(88);
+//                make.bottom.equalTo(self.superview.mas_bottom).with.offset(-84);
+//            }];
         }
         
     }
@@ -85,18 +85,18 @@
     if (self.tag == 473775) {
         
         if ([self judgeBangScreen]) { // 让贴底的view 高度变为34
-            [self mas_updateConstraints:^(MASConstraintMaker *make) {
-                make.height.mas_equalTo(34);
-            }];
+//            [self mas_updateConstraints:^(MASConstraintMaker *make) {
+//                make.height.mas_equalTo(34);
+//            }];
         }
     }
     
     if (self.tag == 4737752) {
         
         if ([self judgeBangScreen]) { // 让贴底的table 高度变为83
-            [self mas_updateConstraints:^(MASConstraintMaker *make) {
-                make.height.mas_equalTo(83);
-            }];
+//            [self mas_updateConstraints:^(MASConstraintMaker *make) {
+//                make.height.mas_equalTo(83);
+//            }];
         }
     }
     
