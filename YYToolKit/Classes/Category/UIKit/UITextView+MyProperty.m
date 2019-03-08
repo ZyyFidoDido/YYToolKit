@@ -110,42 +110,10 @@ static const void *yy_placeHolderKey;
     NSNumber *max = @(maxWords);
     objc_setAssociatedObject(self, TextViewmaxWordsKey, max, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     
-    [self addTarget:self action:@selector(changeValue:) forControlEvents:UIControlEventEditingChanged];
     
     
 }
 
-- (void) changeValue:(UITextView *) textView {
-    
-    
-    NSInteger TEXTLENGTH  =  1000;
-    if (self.maxWords > 0) {
-        TEXTLENGTH = self.maxWords;
-    }
-    
-    NSString *toBeString = textView.text;
-    //获取高亮部分
-    UITextRange *selectedRange = [textView markedTextRange];
-    UITextPosition *position = [textView positionFromPosition:selectedRange.start offset:0];
-    
-    // 没有高亮选择的字，则对已输入的文字进行字数统计和限制
-    if (!position)
-    {
-        if (toBeString.length > TEXTLENGTH)
-        {
-            NSRange rangeIndex = [toBeString rangeOfComposedCharacterSequenceAtIndex:TEXTLENGTH];
-            if (rangeIndex.length == 1)
-            {
-                textView.text = [toBeString substringToIndex:TEXTLENGTH];
-            }
-            else
-            {
-                NSRange rangeRange = [toBeString rangeOfComposedCharacterSequencesForRange:NSMakeRange(0, TEXTLENGTH)];
-                textView.text = [toBeString substringWithRange:rangeRange];
-            }
-        }
-    }
-}
 
 
 
