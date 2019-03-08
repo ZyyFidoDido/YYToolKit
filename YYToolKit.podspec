@@ -37,8 +37,8 @@ TODO: YYToolKit is a Private Tool.Not necessarily good For you.
   # }
 
 #   s.public_header_files = 'Pod/Classes/**/*.h'
-   s.frameworks = 'UIKit', 'MapKit'
-   s.dependency 'Masonry', '~> 1.1.0'
+   s.frameworks = 'UIKit'
+   s 'Masonry', '~> 1.1.0'
    s.dependency 'BlocksKit', '~> 2.2.5'
 #   s.dependency 'ReactiveCocoa', :git => 'https://github.com/zhao0/ReactiveCocoa.git', :tag => '2.5.2'
 end
