@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *  Roll to the bottom
  *
- *  @param animated
+ *  
  */
 - (void)yy_scrollToBottomAnimated:(BOOL)animated;
 
@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *  Roll to the top
  *
- *  @param animated
+ *
  */
 - (void)yy_scrollToTopAnimated:(BOOL)animated;
 

@@ -23,14 +23,14 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *  设置系统自带UITabBar 的前景色
  *
- *  @param tintColor
+ *
  */
 - (void)yy_setupTabBarAppearanceWithTintColor:(UIColor *)tintColor;
 
 /**
  * 设置系统自带的UITabBar的背景色
  *
- *  @param backgroundColor
+ *
  */
 - (void)yy_setupTabBarAppearanceWithBackgroundColor:(UIColor *)backgroundColor;
 
@@ -39,7 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @param backgroundColor            未选择item时tabbaritem的背景颜色
  *  @param didSelectedBackgroundColor 选择item时tabbaritem的背景颜色
- *  @param itemCount                  TabBar上Item的个数
+ *  @param itemsCount                  TabBar上Item的个数
  */
 - (void)yy_setupTabBarAppearanceWithBackgroundColor:(UIColor *)backgroundColor
                          didSelectedBackgroundColor:(UIColor *)didSelectedBackgroundColor
