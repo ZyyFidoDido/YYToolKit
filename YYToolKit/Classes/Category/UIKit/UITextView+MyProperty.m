@@ -110,40 +110,44 @@ static const void *yy_placeHolderKey;
     NSNumber *max = @(maxWords);
     objc_setAssociatedObject(self, TextViewmaxWordsKey, max, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     
-    __weak __typeof(self)weakSelf = self;
-    [self.rac_textSignal subscribeNext:^(NSString *content) {
-        __strong __typeof(weakSelf)strongSelf = weakSelf;
-        
-        NSInteger TEXTLENGTH  =  1000;
-        if (weakSelf.maxWords > 0) {
-            TEXTLENGTH = weakSelf.maxWords;
-        }
-        
-        NSString *toBeString = content;
-        //获取高亮部分
-        UITextRange *selectedRange = [weakSelf markedTextRange];
-        UITextPosition *position = [weakSelf positionFromPosition:selectedRange.start offset:0];
-        
-        // 没有高亮选择的字，则对已输入的文字进行字数统计和限制
-        if (!position)
+    [self addTarget:self action:@selector(changeValue:) forControlEvents:UIControlEventEditingChanged];
+    
+    
+}
+
+- (void) changeValue:(UITextView *) textView {
+    
+    
+    NSInteger TEXTLENGTH  =  1000;
+    if (self.maxWords > 0) {
+        TEXTLENGTH = self.maxWords;
+    }
+    
+    NSString *toBeString = textView.text;
+    //获取高亮部分
+    UITextRange *selectedRange = [textView markedTextRange];
+    UITextPosition *position = [textView positionFromPosition:selectedRange.start offset:0];
+    
+    // 没有高亮选择的字，则对已输入的文字进行字数统计和限制
+    if (!position)
+    {
+        if (toBeString.length > TEXTLENGTH)
         {
-            if (toBeString.length > TEXTLENGTH)
+            NSRange rangeIndex = [toBeString rangeOfComposedCharacterSequenceAtIndex:TEXTLENGTH];
+            if (rangeIndex.length == 1)
             {
-                NSRange rangeIndex = [toBeString rangeOfComposedCharacterSequenceAtIndex:TEXTLENGTH];
-                if (rangeIndex.length == 1)
-                {
-                    weakSelf.text = [toBeString substringToIndex:TEXTLENGTH];
-                }
-                else
-                {
-                    NSRange rangeRange = [toBeString rangeOfComposedCharacterSequencesForRange:NSMakeRange(0, TEXTLENGTH)];
-                    weakSelf.text = [toBeString substringWithRange:rangeRange];
-                }
+                textView.text = [toBeString substringToIndex:TEXTLENGTH];
+            }
+            else
+            {
+                NSRange rangeRange = [toBeString rangeOfComposedCharacterSequencesForRange:NSMakeRange(0, TEXTLENGTH)];
+                textView.text = [toBeString substringWithRange:rangeRange];
             }
         }
-        
-    }];
+    }
 }
+
+
 
 - (NSInteger) maxWords{
     
