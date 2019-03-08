@@ -22,7 +22,7 @@ pod 'YYToolKit'
 
 ## Author
 
-ZyyFidoDido, test@runoob.com
+ZyyFidoDido, 283735151@qq.com
 
 ## License
 

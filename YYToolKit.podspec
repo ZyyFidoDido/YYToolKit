@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YYToolKit'
-  s.version          = '1.1.0'
+  s.version          = '1.1.1'
   s.summary          = 'YYToolKit is a Private Tool.'
 
 # This description is used to generate tags and improve search results.
@@ -24,13 +24,13 @@ TODO: YYToolKit is a Private Tool.Not necessarily good For you.
   s.homepage         = 'https://github.com/ZyyFidoDido/YYToolKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'ZyyFidoDido' => 'test@runoob.com' }
+  s.author           = { 'ZyyFidoDido' => '283735151@qq.com' }
   s.source           = { :git => 'https://github.com/ZyyFidoDido/YYToolKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'YYToolKit/Classes/**/*'
+  s.source_files = 'YYToolKit/Classes/**/*.{h,m}'
   
   # s.resource_bundles = {
   #   'YYToolKit' => ['YYToolKit/Assets/*.png']
