@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YYToolKit'
-  s.version          = '1.1.2'
+  s.version          = '1.1.3'
   s.summary          = 'YYToolKit is a Private Tool.'
 
 # This description is used to generate tags and improve search results.
@@ -41,6 +41,8 @@ TODO: YYToolKit is a Private Tool.Not necessarily good For you.
 #   s.frameworks = 'UIKit'
    s.dependency 'AFNetworking', '~> 3.2.1'
    s.dependency 'Masonry', '~> 1.1.0'
-   s.dependency 'BlocksKit', '~> 2.2.5'
-   s.dependency 'ReactiveCocoa', :git => 'https://github.com/zhao0/ReactiveCocoa.git', :tag => '2.5.2'
+   s.dependency 'BlocksKit'
+#   , '~> 2.2.5'
+   s.dependency 'ReactiveCocoa'
+#   , :git => 'https://github.com/zhao0/ReactiveCocoa.git', :tag => '2.5.2'
 end
