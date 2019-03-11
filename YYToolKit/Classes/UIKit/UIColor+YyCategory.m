@@ -10,9 +10,9 @@
 
 @implementation UIColor (YyCategory)
 
-+ (UIColor *)yycolorWithHexString:(NSString *) stringToConvert {
-    [UIColor yy_colorWithHexString:stringToConvert];
-}
+//+ (UIColor *)yycolorWithHexString:(NSString *) stringToConvert {
+//    [UIColor yy_colorWithHexString:stringToConvert];
+//}
 
 + (UIColor *) yy_colorWithHexString: (NSString *) stringToConvert
 {

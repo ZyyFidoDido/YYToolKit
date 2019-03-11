@@ -8,9 +8,9 @@
 
 #import "UINavigationBar+Awesome.h"
 #import <objc/runtime.h>
+#import "UIView+YYFitXScreen.h"
 
-
-
+#define Sc_Width    [[UIScreen mainScreen] bounds].size.width
 #define SYSTEM_VERSION_LESS_THAN(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
 
 @implementation UINavigationBar (Awesome)
@@ -45,10 +45,10 @@ static char overlayKey;
     
 //    self.overlay.backgroundColor = backgroundColor;
     
-    @_weakSelf(self)
+    __weak typeof(self) weakSelf = self;
     [UIView animateWithDuration:0.3 animations:^{
-        @_strongSelf(self)
-        self.overlay.backgroundColor = backgroundColor;
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        strongSelf.overlay.backgroundColor = backgroundColor;
     }];
     
 }
@@ -71,10 +71,10 @@ static char overlayKey;
     UIImageView *bgImage = [[UIImageView alloc] initWithFrame:self.overlay.bounds];
     bgImage.image = backgroundImage;
     
-    @_weakSelf(self)
+    __weak typeof(self) weakSelf = self;
     [UIView animateWithDuration:0.3 animations:^{
-        @_strongSelf(self)
-        [self.overlay addSubview:bgImage];
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        [strongSelf.overlay addSubview:bgImage];
     }];
     
 }
@@ -103,11 +103,11 @@ static char overlayKey;
     
 
     
-    @_weakSelf(self)
+    __weak typeof(self) weakSelf = self;
     [UIView animateWithDuration:0.3 animations:^{
-        @_strongSelf(self)
-        [self.overlay addSubview:bgImage];
-        [self.overlay addSubview:titleImageView];
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        [strongSelf.overlay addSubview:bgImage];
+        [strongSelf.overlay addSubview:titleImageView];
     }];
     
 }

@@ -16,9 +16,9 @@
 }
 
 -(void)yy_AddNotiWithName:(NSString *)name getBlock:(void (^)(NSNotification *))block{
-    [[[NSNotificationCenter defaultCenter] rac_addObserverForName:name object:nil] subscribeNext:^(NSNotification *notification) {
-        block(notification);
-    }];
+//    [[[NSNotificationCenter defaultCenter] rac_addObserverForName:name object:nil] subscribeNext:^(NSNotification *notification) {
+//        block(notification);
+//    }];
 }
 
 - (void)yy_RemoveNotiWithName:(NSString *)name{

@@ -8,6 +8,7 @@
 
 #import "UITextView+MyProperty.h"
 #import <objc/runtime.h>
+#import "ReactiveObjC.h"
 
 static const void *TextViewmaxWordsKey = &TextViewmaxWordsKey;
 static const void *yy_placeHolderKey;
@@ -110,19 +111,19 @@ static const void *yy_placeHolderKey;
     NSNumber *max = @(maxWords);
     objc_setAssociatedObject(self, TextViewmaxWordsKey, max, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     
-    @_weakSelf(self)
+    __weak typeof(self) weakSelf = self;
     [self.rac_textSignal subscribeNext:^(NSString *content) {
-        @_strongSelf(self)
+        __strong typeof(weakSelf) strongSelf = weakSelf;
         
         NSInteger TEXTLENGTH  =  1000;
-        if (self.maxWords > 0) {
-            TEXTLENGTH = self.maxWords;
+        if (strongSelf.maxWords > 0) {
+            TEXTLENGTH = strongSelf.maxWords;
         }
         
         NSString *toBeString = content;
         //获取高亮部分
-        UITextRange *selectedRange = [self markedTextRange];
-        UITextPosition *position = [self positionFromPosition:selectedRange.start offset:0];
+        UITextRange *selectedRange = [strongSelf markedTextRange];
+        UITextPosition *position = [strongSelf positionFromPosition:selectedRange.start offset:0];
         
         // 没有高亮选择的字，则对已输入的文字进行字数统计和限制
         if (!position)
@@ -132,12 +133,12 @@ static const void *yy_placeHolderKey;
                 NSRange rangeIndex = [toBeString rangeOfComposedCharacterSequenceAtIndex:TEXTLENGTH];
                 if (rangeIndex.length == 1)
                 {
-                    self.text = [toBeString substringToIndex:TEXTLENGTH];
+                    strongSelf.text = [toBeString substringToIndex:TEXTLENGTH];
                 }
                 else
                 {
                     NSRange rangeRange = [toBeString rangeOfComposedCharacterSequencesForRange:NSMakeRange(0, TEXTLENGTH)];
-                    self.text = [toBeString substringWithRange:rangeRange];
+                    strongSelf.text = [toBeString substringWithRange:rangeRange];
                 }
             }
         }

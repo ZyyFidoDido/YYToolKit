@@ -9,6 +9,14 @@
 #ifndef YYCategory_h
 #define YYCategory_h
 
+#import "AFNetworking.h"
+#import "BlocksKit.h"
+#import "Masonry.h"
+#import "MBProgressHUD.h"
+#import "UIView+PREBorderView.h"
+#import "ReactiveObjC.h"
+#import "pop.h"
+
 //core
 #import "NSDictionary+YyCategory.h"
 #import "NSArray+YyCategory.h"
@@ -39,13 +47,8 @@
 
 
 
-#import "AFNetworking.h"
-#import "BlocksKit.h"
-#import "Masonry.h"
-#import "MBProgressHUD.h"
-#import "UIView+PREBorderView.h"
-#import "ReactiveObjC.h"
 
-#import "constHeader.h"
+
+
 
 #endif /* YYCategory_h */

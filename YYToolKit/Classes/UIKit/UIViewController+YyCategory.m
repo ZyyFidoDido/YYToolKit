@@ -9,7 +9,8 @@
 #import "UIViewController+YyCategory.h"
 #import "BlocksKit+UIKit.h"
 #import <objc/runtime.h>
-
+#import "constHeader.h"
+#import "UIColor+YyCategory.h"
 
 static const void *barRightButtonImageNameKey     = &barRightButtonImageNameKey;
 static const void *barRightButtonNameKey          = &barRightButtonNameKey;

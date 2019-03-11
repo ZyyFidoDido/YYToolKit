@@ -7,6 +7,7 @@
 //
 
 #import "UIView+YyCategory.h"
+#import "UIColor+YyCategory.h"
 
 @implementation UIView (YyCategory)
 

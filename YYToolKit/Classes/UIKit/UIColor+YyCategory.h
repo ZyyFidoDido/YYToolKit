@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIColor *) yy_colorWithHexString: (NSString *) stringToConvert;
 
 
-+ (UIColor *)yycolorWithHexString:(NSString *) stringToConvert;
+//+ (UIColor *)yycolorWithHexString:(NSString *) stringToConvert;
 @end
 
 NS_ASSUME_NONNULL_END

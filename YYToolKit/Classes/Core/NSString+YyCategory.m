@@ -10,6 +10,7 @@
 #import <sys/utsname.h>
 #import <CommonCrypto/CommonDigest.h>
 #import <CommonCrypto/CommonHMAC.h>
+#import "constHeader.h"
 
 //屏幕高度
 #define Height   [[UIScreen mainScreen] bounds].size.height
