@@ -61,6 +61,7 @@
 #import "BlocksKit+UIKit.h"
 #import "BlocksKit+MessageUI.h"
 
-#import "ReactiveCocoa.h"
+//#import "ReactiveCocoa.h"
+#import "ReactiveObjC.h"
 
 

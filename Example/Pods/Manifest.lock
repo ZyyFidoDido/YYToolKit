@@ -31,17 +31,13 @@ PODS:
     - BlocksKit/DynamicDelegate
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
-  - ReactiveCocoa (8.0.2):
-    - ReactiveSwift (~> 4.0)
-  - ReactiveSwift (4.0.0):
-    - Result (~> 4.0)
-  - Result (4.1.0)
+  - ReactiveObjC (3.1.0)
   - YYToolKit (1.1.3):
     - AFNetworking (~> 3.2.1)
     - BlocksKit
     - Masonry (~> 1.1.0)
     - MBProgressHUD
-    - ReactiveCocoa
+    - ReactiveObjC (~> 3.1.0)
 
 DEPENDENCIES:
   - YYToolKit (from `../`)
@@ -52,9 +48,7 @@ SPEC REPOS:
     - BlocksKit
     - Masonry
     - MBProgressHUD
-    - ReactiveCocoa
-    - ReactiveSwift
-    - Result
+    - ReactiveObjC
 
 EXTERNAL SOURCES:
   YYToolKit:
@@ -65,10 +59,8 @@ SPEC CHECKSUMS:
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
-  ReactiveCocoa: fbd26e9ba60e98417ee47433e59465a98ed9da0f
-  ReactiveSwift: a2bb9ace428a109e9c0209615645d9d286c8c433
-  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
-  YYToolKit: 375c82c0025822aabe0c3ab848210dfe77c267cf
+  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
+  YYToolKit: a747f9d6a8e3d5d84796db328db13d791610aa97
 
 PODFILE CHECKSUM: 75b6c37d811b8b8ed63b304334a85d9018eaafc9
 

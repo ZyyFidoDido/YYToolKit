@@ -31,11 +31,11 @@
     "BlocksKit": [
 
     ],
-    "ReactiveCocoa": [
-
-    ],
     "MBProgressHUD": [
 
+    ],
+    "ReactiveObjC": [
+      "~> 3.1.0"
     ]
   }
 }
