@@ -21,7 +21,6 @@
 #import "UIButton+YyButtonGategory.h"
 #import "UIColor+YyCategory.h"
 #import "UIImage+YyImageCategory.h"
-#import "UIImageView+YyImageViewGategory.h"
 #import "UILabel+MyProperty.h"
 #import "UINavigationBar+Awesome.h"
 #import "UIResponder+Appearance.h"

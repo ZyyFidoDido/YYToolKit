@@ -15,7 +15,7 @@
 #import "MBProgressHUD.h"
 #import "UIView+PREBorderView.h"
 #import "ReactiveObjC.h"
-#import "pop.h"
+#import "POP.h"
 
 //core
 #import "NSDictionary+YyCategory.h"

@@ -7,6 +7,7 @@
 //
 
 #import "UILabel+MyProperty.h"
+#import "POP.h"
 
 @implementation UILabel (MyProperty)
 
