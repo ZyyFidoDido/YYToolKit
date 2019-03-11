@@ -161,12 +161,6 @@ static inline NSString *cachePath() {
         id dict = responseObject;
         //NSLog(@"请求源---%@",dict);
         completion(1,dict);
-//        if (SNet403) {
-//            //NSLog(@"请求源---%@",dict);
-//             completion(1,dict);
-//        } else {
-//            completion(1,dict);
-//        }
 
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         // 请求失败
