@@ -45,5 +45,6 @@ TODO: YYToolKit is a Private Tool.Not necessarily good For you.
    s.dependency 'BlocksKit'
 #   , '~> 2.2.5'
    s.dependency 'ReactiveCocoa'
+   s.dependency 'MBProgressHUD'
 #   , :git => 'https://github.com/zhao0/ReactiveCocoa.git', :tag => '2.5.2'
 end
