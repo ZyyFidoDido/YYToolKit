@@ -1,0 +1,6 @@
+framework module PREBorderView {
+  umbrella header "PREBorderView-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -31,12 +31,14 @@ PODS:
     - BlocksKit/DynamicDelegate
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
+  - PREBorderView (3.2.2)
   - ReactiveObjC (3.1.0)
   - YYToolKit (1.1.3):
     - AFNetworking (~> 3.2.1)
     - BlocksKit
     - Masonry (~> 1.1.0)
     - MBProgressHUD
+    - PREBorderView (~> 3.2.2)
     - ReactiveObjC (~> 3.1.0)
 
 DEPENDENCIES:
@@ -48,6 +50,7 @@ SPEC REPOS:
     - BlocksKit
     - Masonry
     - MBProgressHUD
+    - PREBorderView
     - ReactiveObjC
 
 EXTERNAL SOURCES:
@@ -59,8 +62,9 @@ SPEC CHECKSUMS:
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  PREBorderView: 635c801199e47c6c5a91cd54cac075cab6070ee6
   ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
-  YYToolKit: a747f9d6a8e3d5d84796db328db13d791610aa97
+  YYToolKit: dbe57ce1882927c8db6e0687d368a1c9259c7867
 
 PODFILE CHECKSUM: 75b6c37d811b8b8ed63b304334a85d9018eaafc9
 
