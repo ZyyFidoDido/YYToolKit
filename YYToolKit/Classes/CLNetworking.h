@@ -12,8 +12,8 @@
 /*
  基于AFNetworking3.1.0二次封装
  */
-#import <AFNetworking.h>
-
+//#import <AFNetworking.h>
+#import <AFNetworking/AFNetworking.h>
 #import "CLNetworkingManager.h"
 #import "CLImageModel.h"
 #import "NSString+CLTools.h"
