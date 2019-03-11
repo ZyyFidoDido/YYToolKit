@@ -37,7 +37,7 @@ TODO: YYToolKit is a Private Tool.Not necessarily good For you.
   # }
 
   s.requires_arc = true
-#   s.public_header_files = 'Pod/Classes/**/*.h'
+   s.public_header_files = 'Pod/Classes/**/*.h'
 #   s.frameworks = 'UIKit'
    s.dependency 'AFNetworking', '~> 3.2.1'
 #   s.dependency 'Masonry', '~> 1.1.0'
