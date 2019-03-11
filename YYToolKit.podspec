@@ -39,7 +39,7 @@ TODO: YYToolKit is a Private Tool.Not necessarily good For you.
   s.swift_version = '4.0'
   s.requires_arc = true
 #   s.public_header_files = 'Pod/Classes/**/*.h'
-#   s.frameworks = 'UIKit'
+   s.frameworks = 'UIKit','Foundation'
    s.dependency 'AFNetworking', '~> 3.2.1'
    s.dependency 'Masonry', '~> 1.1.0'
    s.dependency 'BlocksKit'
