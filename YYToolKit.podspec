@@ -47,5 +47,6 @@ TODO: YYToolKit is a Private Tool.Not necessarily good For you.
    s.dependency 'MBProgressHUD'
 #   s.dependency 'ReactiveCocoa',:git => 'https://github.com/zhao0/ReactiveCocoa.git', :tag => '2.5.2'
   s.dependency 'ReactiveObjC', '~> 3.1.0'
+  s.dependency 'PREBorderView', '~> 3.2.2'
    
 end
