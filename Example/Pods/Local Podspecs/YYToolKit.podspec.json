@@ -33,6 +33,9 @@
     ],
     "ReactiveCocoa": [
 
+    ],
+    "MBProgressHUD": [
+
     ]
   }
 }
