@@ -36,6 +36,7 @@ TODO: YYToolKit is a Private Tool.Not necessarily good For you.
   #   'YYToolKit' => ['YYToolKit/Assets/*.png']
   # }
 
+  s.swift_version = '4.0'
   s.requires_arc = true
 #   s.public_header_files = 'Pod/Classes/**/*.h'
 #   s.frameworks = 'UIKit'
